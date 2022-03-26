@@ -23,7 +23,7 @@ export default async function main(subject, text) {
         to: senderEmail,
         subject: subject,
         text: text
-    }
+    };
 
     trans.sendMail(recip, (err, info) => {
         if (err) {
